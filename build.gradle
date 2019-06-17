@@ -3,6 +3,8 @@ buildscript {
 		springBootVersion = '2.1.4.RELEASE'
 	}
 	repositories {
+		//如果本地maven仓库有，就从本地仓库中拉取jar
+		mavenLocal()
 	    maven { url "http://repo.spring.io/libs-milestone" }
 		mavenCentral()
         jcenter()
