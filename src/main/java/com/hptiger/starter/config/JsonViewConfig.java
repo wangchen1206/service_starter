@@ -17,6 +17,8 @@ import com.monitorjbl.json.JsonViewSupportFactoryBean;
 public class JsonViewConfig {
 	@Autowired
 	private ObjectMapper mapper;
+	
+	//注册自己封装的Bean
 	@Bean
 	public JsonViewSupportFactoryBean views() {
 		return new JsonViewSupportFactoryBean(mapper);
