@@ -22,6 +22,10 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
+	/**
+	 * 允许/api/** ,/app/**路径下，允许跨域请求。
+	 * @return
+	 */
 	@Bean
 	public WebMvcConfigurer corsConfigurer() {
 		return new WebMvcConfigurer() {
